@@ -20,6 +20,7 @@ class FlowLogProcessor:
 
 
     def __process_map_file(self, map_file_path):
+        # header_indexes is a map that contains the header name as key and position or col number of the header in row
         header_indexes = None
         with open(map_file_path, "r") as file:
             for line in file:
